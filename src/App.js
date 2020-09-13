@@ -2,7 +2,7 @@ import React from "react";
 
 function App() {
   let [randomNum, setRandomNum] = React.useState(null);
-  let [quantity, setQuantity] = React.useState(4);
+  // let [quantity, setQuantity] = React.useState(4);
   let [delay, setDelay] = React.useState(30);
   let [isRunning, setIsRunning] = React.useState(false);
   let [counter, setCounter] = React.useState(0);
@@ -49,6 +49,9 @@ function App() {
   const startFn = () => {
     // bisognerà aggiungere controlli qui e utilizzare setAlert
     setIsRunning(true);
+    if (false) {
+      setAlert("finto per non avere warning");
+    }
   };
 
   return (
